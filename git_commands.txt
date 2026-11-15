@@ -1,0 +1,49 @@
+================================================================================
+GIT & GITHUB WORKFLOW COMMAND DOCUMENTATION
+Repository: https://github.com/vanshkamra12/my-git-project
+================================================================================
+
+1. git init
+   Initializes a new Git repository in the current directory, creating the hidden .git metadata folder.
+
+2. git status
+   Displays the current state of the working directory and staging area (tracked, untracked, and modified files).
+
+3. git add .
+   Stages all new, modified, or untracked files into the staging area to prepare them for the next commit.
+
+4. git commit -m "Initial commit: Add index.html and about.html"
+   Saves the staged snapshot of files into Git's permanent version history with a descriptive message.
+
+5. git add index.html
+   Stages only the modified index.html file into the Git staging area.
+
+6. git commit -m "Update index.html with welcome heading"
+   Records the modifications made to index.html as the second commit on the main branch.
+
+7. git checkout -b feature
+   Creates a new branch named 'feature' and immediately switches the active working environment to it.
+
+8. git add about.html
+   Stages the updated about.html file inside the feature branch.
+
+9. git commit -m "Add about us details in feature branch"
+   Saves changes made in about.html exclusively to the feature branch.
+
+10. git checkout main
+    Switches the active working branch back to the primary 'main' branch.
+
+11. git merge --no-ff feature -m "Merge feature branch into main"
+    Merges the 'feature' branch into 'main' with an explicit merge commit to visibly preserve branch history.
+
+12. git log --graph --all --decorate --oneline
+    Displays a visual ASCII tree graph of all commits across all branches in a compact format.
+
+13. git reset HEAD~1
+    Undoes the most recent commit by moving HEAD back 1 commit while keeping files in working directory unstaged.
+
+14. git push -u origin main
+    Pushes the local 'main' branch commits to the remote GitHub repository and sets up tracking.
+
+15. git push -u origin feature
+    Pushes the local 'feature' branch to GitHub so branch history is visible on the remote repository.
